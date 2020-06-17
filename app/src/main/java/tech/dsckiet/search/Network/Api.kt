@@ -1,4 +1,4 @@
-package tech.dsckiet.search.Model
+package tech.dsckiet.search.Network
 
 import retrofit2.Call
 import retrofit2.http.GET
@@ -10,7 +10,7 @@ const val BASE_URL = "https://opentdb.com/"
 interface Api {
 
     @GET("api.php")
-    fun getQuestions(@Query("amount=") amount: Int)
+    fun getQuestions(@Query("amount") amount: Int)
             : Call<QuizResponse>
 
 }

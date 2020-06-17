@@ -1,4 +1,4 @@
-package tech.dsckiet.search.Model
+package tech.dsckiet.search.Network
 
 data class Questions(
     val category: String,
